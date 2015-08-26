@@ -1,0 +1,46 @@
+﻿@using Microsoft.AspNet.Identity
+@{
+	ViewBag.Title = "Home Page";
+}
+
+
+
+<div class="row">
+	@if (!Request.IsAuthenticated)
+	{
+		<div class="jumbotron">
+			<h1>Online Book Reader</h1>
+			<p class="lead">This is the best website to read your favourite books online.</p>
+		</div>
+		
+		<div class="col-md-4">
+			<h2>Are you registered?</h2>
+			<p>
+				Please, contact with de administrator to gain login access.
+			</p>
+			<p><a class="btn btn-default" href="mailto:admin@OnlineBookReader.com">Contact &raquo;</a></p>
+		</div>
+
+	}
+	else
+	{
+		<div class="col-md-4">
+			<h2>Control Panel</h2>
+			<ul>
+				@if (User.IsInRole("Admin"))
+				{
+					<li>
+						@Html.ActionLink("Manage Books", "Index", "Books", null, new { id = "booksIndex" })
+					</li>
+					<li>
+						@Html.ActionLink("Manage Users", "Index", "ApplicationUsers", null, new { id = "usersIndex" })
+					</li>
+					
+				}
+			</ul>
+		</div>
+	}
+
+
+
+</div>
