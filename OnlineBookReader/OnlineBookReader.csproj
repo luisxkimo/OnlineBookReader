@@ -224,9 +224,9 @@
     <Content Include="Views\ApplicationUsers\Delete.cshtml" />
     <Content Include="Views\ApplicationUsers\Index.cshtml" />
     <Content Include="Views\Books\Upload.cshtml" />
-    <None Include="Services\validator.xsd">
+    <EmbeddedResource Include="Services\validator.xsd">
       <SubType>Designer</SubType>
-    </None>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
