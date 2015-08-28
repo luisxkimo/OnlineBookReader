@@ -64,11 +64,11 @@ namespace OnlineBookReader.Controllers
 					var document = XDocument.Load(file.InputStream);
 					try
 					{
-						XMLBookParser.Parse(document);
+						var entities = XMLBookParser.Parse(document);
 					}
 					catch (ValidateDocumentException exception)
 					{
-						AddErrors(extension);
+						AddErrors("Format Error in XML");
 						return View();
 					}
 					ViewBag.Success = "Successful upload!";

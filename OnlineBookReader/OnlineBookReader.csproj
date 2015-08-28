@@ -175,6 +175,7 @@
     <Compile Include="Models\RegisterViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\IdendityUserPropertiesService.cs" />
+    <Compile Include="Services\XElementExtensions.cs" />
     <Compile Include="Services\XMLBookParser.cs" />
     <Compile Include="Services\XMLValidator.cs" />
     <Compile Include="Startup.cs" />
@@ -182,6 +183,8 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <EmbeddedResource Include="Content\Examples\books.xml" />
+    <EmbeddedResource Include="Content\Examples\books_only_one.xml" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

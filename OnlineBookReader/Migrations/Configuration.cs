@@ -1,5 +1,4 @@
 using OnlineBookReader.DB;
-using OnlineBookReader.Models;
 using System.Data.Entity.Migrations;
 
 namespace OnlineBookReader.Migrations

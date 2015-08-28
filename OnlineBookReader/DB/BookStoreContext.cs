@@ -29,7 +29,8 @@ namespace OnlineBookReader.DB
 					Author = "Gambardella, Matthew",
 					BookId = "bk101",
 					Title = "XML Developer's Guide",
-					Price = 44.95,
+					Genre = "Computer",
+					Price = 44.95m,
 					Description = "An in-depth look at creating applications with XML"
 				},
 
@@ -38,7 +39,8 @@ namespace OnlineBookReader.DB
 					Author = "Ralls, Kim",
 					BookId = "bk102",
 					Title = "Midnight Rain",
-					Price = 5.95,
+					Genre = "Fiction",
+					Price = 5.95m,
 					Description = "A former architect battles corporate zombies, an evil sorceress, and her own childhood to become queen of the world"
 				},
 
@@ -47,7 +49,8 @@ namespace OnlineBookReader.DB
 					Author = "Corets, Eva",
 					BookId = "bk103",
 					Title = "Maeve Ascendant",
-					Price = 10.40,
+					Genre = "Science",
+					Price = 10.40m,
 					Description = @"After the collapse of a nanotechnology society in England, the young survivors lay the foundation for a new society.
 "
 				},
